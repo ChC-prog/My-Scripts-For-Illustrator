@@ -135,32 +135,28 @@ boiteEchelle.margins = 16;
                                 groupRadioBtn.spacing = 22;
                                         var rdbApercuLarg_1 = groupRadioBtn.add("radiobutton", undefined, "Preview");
                                                 rdbApercuLarg_1.height =  20;
-                                                rdbApercuLarg_1.onClick = function () { if (defaire) { btExecution('app.undo();')}
-                                                                                                              if ( rdbApercuLarg_1.value === true) {
+                                                rdbApercuLarg_1.onClick = function () { if ( rdbApercuLarg_1.value === true) {
                                                                                                                     monEchelle = rapport_L1_sur_L2;
                                                                                                                     majApercu();
                                                                                                               }
                                                                                                           }
                                         var rdbApercuLarg_2 = groupRadioBtn.add("radiobutton", undefined, "Preview");
                                                 rdbApercuLarg_2.height =  20;
-                                                rdbApercuLarg_2.onClick = function () { if (defaire) { btExecution('app.undo();')}
-                                                                                                              if ( rdbApercuLarg_2.value === true ) {
+                                                rdbApercuLarg_2.onClick = function () { if ( rdbApercuLarg_2.value === true ) {
                                                                                                                     monEchelle = rapport_L2_sur_L1;
                                                                                                                     majApercu()
                                                                                                               }
                                                                                                           }
                                         var rdbApercuHaut_1 = groupRadioBtn.add("radiobutton", undefined, "Preview");
                                                 rdbApercuHaut_1.height =  20;
-                                                rdbApercuHaut_1.onClick = function () { if (defaire) { btExecution('app.undo();')}
-                                                                                                              if ( rdbApercuHaut_1.value === true ) {
+                                                rdbApercuHaut_1.onClick = function () { if ( rdbApercuHaut_1.value === true ) {
                                                                                                                     monEchelle = rapport_H1_sur_H2;
                                                                                                                     majApercu()
                                                                                                               }
                                                                                                           }
                                         var rdbApercuHaut_2 = groupRadioBtn.add("radiobutton", undefined, "Preview");
                                                 rdbApercuHaut_2.height =  20
-                                                rdbApercuHaut_2.onClick = function () { if (defaire) { btExecution('app.undo();')}
-                                                                                                              if (rdbApercuHaut_2.value === true ) {
+                                                rdbApercuHaut_2.onClick = function () { if (rdbApercuHaut_2.value === true ) {
                                                                                                                     monEchelle = rapport_H2_sur_H1;
                                                                                                                     majApercu()
                                                                                                               }
@@ -188,12 +184,10 @@ boiteEchelle.margins = 16;
                         var dividerv7 = groupTransformation.add("panel"); 
                         dividerv7.alignment = "fill";
                         rdbGroupee = groupTransformation.add("radiobutton", undefined, "All the Group");
-                        rdbGroupee.onClick = function () { if (defaire) { btExecution('app.undo();')}
-                                                                                majApercu()};
+                        rdbGroupee.onClick = function () { majApercu()};
                 var rdbRepartie = groupTransformation.add("radiobutton", undefined, "Each Object");
                         rdbRepartie.value = true;
-                        rdbRepartie.onClick = function () { if (defaire) { btExecution('app.undo();')}
-                                                                                 majApercu()};
+                        rdbRepartie.onClick = function () { majApercu()};
 var divider_h7 = boiteEchelle.add("panel"); 
     divider_h7.alignment = "fill"; 
         //Options Group
@@ -201,8 +195,7 @@ var divider_h7 = boiteEchelle.add("panel");
                     var ckbContours = groupOptions.add("checkbox", undefined, "Apply to strokes and effects \?");
                         ckbContours.value = true;
                         mesContours = 1;
-                        ckbContours.onClick = function () { if (defaire) { btExecution('app.undo();')}
-                                                                                                ckbContours.value === true ? mesContours = 1 : mesContours = 0;
+                        ckbContours.onClick = function () { ckbContours.value === true ? mesContours = 1 : mesContours = 0;
                                                                                                 majApercu()};
                             var dividerv8 = groupOptions.add("panel"); 
                             dividerv8.alignment = "fill";
