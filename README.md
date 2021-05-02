@@ -21,3 +21,11 @@ Echelle
 		- Retrieve the scale factor between two selected objects
 		- Then select one or more other objects to decrease or increase their size according to the
 			scale factor previously acquired.
+			
+Caracteres_Speciaux
+-----------------------------------------------------------------------------------------------------
+	Affiche une palette flottante qui permet, lors de la saisie de texte dans Illustrator, d’accéder
+	facilement à des caractères spéciaux fréquemment utilisés en français mais qui ne sont
+	pas directement accessibles, comme, par exemple, certaines majuscules accentuées.
+	Lorsque l’on est dans une zone de texte, il suffit de cliquer sur l’un des boutons pour que
+	le caractère correspondant apparaisse à l’endroit du curseur.
